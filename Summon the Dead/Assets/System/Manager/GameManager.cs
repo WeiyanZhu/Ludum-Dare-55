@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public static bool InMiniMapMode = false;
     private Language language;
     public Language Language { get { return language;} private set { language = value;}}
     [SerializeField] private TextLibrary textLibrary;

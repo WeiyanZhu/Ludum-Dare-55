@@ -31,7 +31,7 @@ public class ItemUI : MonoBehaviour
             itemNameText.text = GameManager.instance.TextLibrary.GetText("items", itemData.NameKey);
             itemSprite.gameObject.SetActive(true);
             itemSprite.sprite = itemData.Sprite;
-            equipIndicator.SetActive(itemData.ID == equippedItemId);
+            equipIndicator.SetActive(index == equippedItemId);
         }
     }
 }

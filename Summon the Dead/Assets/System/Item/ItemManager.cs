@@ -6,6 +6,9 @@ public class ItemManager : MonoBehaviour
 {
     private List<ItemScriptableObject> items = new List<ItemScriptableObject>();
     [SerializeField] private List<ItemUI> itemUIs = new List<ItemUI>();
+    [SerializeField] private AudioClip getItemSound;
+    [SerializeField] private AudioClip equipSound;
+    [SerializeField] private AudioClip unequipSound;
     
 
     private int equippedItemIndex = -1;
@@ -18,6 +21,7 @@ public class ItemManager : MonoBehaviour
     public void AddItem(ItemScriptableObject item)
     {
         items.Add(item);
+        AudioSource.PlayClipAtPoint(getItemSound, Camera.main.transform.position);
         UpdateUI();
     }
 
@@ -28,13 +32,15 @@ public class ItemManager : MonoBehaviour
 
     public void EquipItem(int index)
     {
-        if (equippedItemIndex  == index)
+        if (equippedItemIndex == index)
         {
             equippedItemIndex = -1;
+            AudioSource.PlayClipAtPoint(unequipSound, Camera.main.transform.position);
         } 
-        else
+        else if(index >= 0 && index < items.Count)
         {
             equippedItemIndex = index;
+            AudioSource.PlayClipAtPoint(equipSound, Camera.main.transform.position);
         }
         UpdateUI();
     }
