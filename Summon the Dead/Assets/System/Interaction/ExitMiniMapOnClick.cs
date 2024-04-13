@@ -7,7 +7,7 @@ public class ExitMiniMapOnClick : MonoBehaviour
     [SerializeField] private GameObject miniMap;
     [SerializeField] private AudioClip exitMiniMapSound;
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         if (!GameManager.InMiniMapMode)
         {

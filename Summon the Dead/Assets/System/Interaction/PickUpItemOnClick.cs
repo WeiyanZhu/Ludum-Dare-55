@@ -14,6 +14,6 @@ public class PickUpItemOnClick : MonoBehaviour
             return;
         }
         GameManager.instance.ItemManager.AddItem(item);
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }
