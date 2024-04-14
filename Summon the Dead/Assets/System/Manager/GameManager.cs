@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public ItemManager ItemManager { get { return itemManager; } private set { itemManager = value; } }
 
     public bool magicCirclePuzzleSolved = false;
+    [SerializeField] private GameObject endGameUI;
 
     void Awake()
     {
@@ -32,5 +33,11 @@ public class GameManager : MonoBehaviour
     void Initialize()
     {
         language = Language.English;
+    }
+
+    public void EndGame()
+    {
+        InMiniMapMode = true;
+        endGameUI.SetActive(true);
     }
 }
