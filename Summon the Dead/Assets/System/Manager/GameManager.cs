@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ItemManager itemManager;
     public ItemManager ItemManager { get { return itemManager; } private set { itemManager = value; } }
 
+    public bool magicCirclePuzzleSolved = false;
+
     void Awake()
     {
         if (instance == null)
