@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject endGameUI;
     [Header("Shit since no enough time")]
     [SerializeField] private AudioClip buySound;
+    [SerializeField] private AudioClip changeLanguageSound;
 
     void Awake()
     {
@@ -47,5 +49,14 @@ public class GameManager : MonoBehaviour
     {
         if (buySound != null)
             AudioSource.PlayClipAtPoint(buySound, Camera.main.transform.position);
+    }
+
+    public void ChangeLanguage()
+    {
+        language = language == Language.English ? Language.Chinese : Language.English;
+        foreach (SetTextWithJSON s in GameObject.FindObjectsOfType<SetTextWithJSON>())
+            s.UpdateValue();
+        if(changeLanguageSound != null)
+            AudioSource.PlayClipAtPoint(changeLanguageSound, Camera.main.transform.position);
     }
 }
