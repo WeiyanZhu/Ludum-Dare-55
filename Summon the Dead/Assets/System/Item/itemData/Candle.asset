@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Candle
   m_EditorClassIdentifier: 
   itemNameKey: candle
-  sprite: {fileID: 21300000, guid: 2aae2a6b35be87c4ca3457133391fc60, type: 3}
+  sprite: {fileID: 21300000, guid: cda32cf5fd8dfda4296312cff61550a4, type: 3}
