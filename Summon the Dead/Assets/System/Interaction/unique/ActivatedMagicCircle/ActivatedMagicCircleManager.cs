@@ -88,6 +88,10 @@ public class ActivatedMagicCircleManager : MonoBehaviour
 
     public void CheckAfterSummon()
     {
+        if(cutTimes > 7)
+        {
+            return;
+        }
         if(GameManager.instance.ItemManager.EquippedItem() == knifeItem)
         {
             cutTimes++;

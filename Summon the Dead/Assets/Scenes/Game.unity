@@ -754,7 +754,7 @@ MonoBehaviour:
   - {fileID: -1681367327, guid: 5b4ae3a7992dc1a4ba0278ec23d87755, type: 3}
   closedCoffin: {fileID: 249305234}
   openCoffin: {fileID: 1193444459}
-  openSound: {fileID: 0}
+  openSound: {fileID: 8300000, guid: 6ea82d5a503bc584b81938f680c5ba36, type: 3}
 --- !u!1 &92536268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniMap: {fileID: 2050006009}
-  exitMiniMapSound: {fileID: 0}
+  exitMiniMapSound: {fileID: 8300000, guid: 48e49f9f3055eb0458350b96ba79f23d, type: 3}
 --- !u!114 &140387319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1248,6 +1248,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1204132820}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: PlayBuySound
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1646,9 +1658,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miniMap: {fileID: 204911894}
   key: {fileID: 11400000, guid: 9b74ab703dd57584dafdfd3b05211fb9, type: 2}
-  lockedSound: {fileID: 0}
-  unlockSound: {fileID: 0}
-  enterMiniMapSound: {fileID: 0}
+  lockedSound: {fileID: 8300000, guid: 275ea72ce42ee9547ac0f966c12ae16f, type: 3}
+  unlockSound: {fileID: 8300000, guid: fce5e6e987ee59f479f0eeb85a896488, type: 3}
+  enterMiniMapSound: {fileID: 8300000, guid: 6ea82d5a503bc584b81938f680c5ba36, type: 3}
 --- !u!61 &170831785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2171,7 +2183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniMap: {fileID: 895410674}
-  enterMiniMapSound: {fileID: 0}
+  enterMiniMapSound: {fileID: 8300000, guid: ce35ebb8ed4506e458c703e322947183, type: 3}
 --- !u!1 &204911894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3768,7 +3780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniMap: {fileID: 816144168}
-  enterMiniMapSound: {fileID: 0}
+  enterMiniMapSound: {fileID: 8300000, guid: 6ea82d5a503bc584b81938f680c5ba36, type: 3}
 --- !u!1 &356414184
 GameObject:
   m_ObjectHideFlags: 0
@@ -4606,7 +4618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniMap: {fileID: 94578047}
-  enterMiniMapSound: {fileID: 0}
+  enterMiniMapSound: {fileID: 8300000, guid: ce35ebb8ed4506e458c703e322947183, type: 3}
 --- !u!61 &526762624
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4847,7 +4859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 978ef7ffde4aeb44599d6fca5a65073b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerSound: {fileID: 0}
+  triggerSound: {fileID: 8300000, guid: 761211b02de16c7448fff7fbf9b7e758, type: 3}
   mapFrom: {fileID: 1410269436}
   mapTo: {fileID: 1011760586}
 --- !u!1 &536259951
@@ -5342,8 +5354,9 @@ MonoBehaviour:
   - {fileID: 504787739}
   - {fileID: 1741455052}
   magicCircleActivate: {fileID: 1075504978}
-  runeActivateSound: {fileID: 0}
-  runeDeactivateSound: {fileID: 0}
+  runeActivateSound: {fileID: 8300000, guid: 906bc5709fc038a4bb2456e87714382c, type: 3}
+  runeDeactivateSound: {fileID: 8300000, guid: 48e49f9f3055eb0458350b96ba79f23d, type: 3}
+  magicCircleActivateSound: {fileID: 8300000, guid: c7f836427a07fc547808a2111d6089a7, type: 3}
 --- !u!1 &576026594
 GameObject:
   m_ObjectHideFlags: 0
@@ -5675,7 +5688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniMap: {fileID: 94578047}
-  exitMiniMapSound: {fileID: 0}
+  exitMiniMapSound: {fileID: 8300000, guid: 48e49f9f3055eb0458350b96ba79f23d, type: 3}
 --- !u!114 &636526735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7013,6 +7026,10 @@ PrefabInstance:
       propertyPath: miniMap
       value: 
       objectReference: {fileID: 816144168}
+    - target: {fileID: 8431984503536433418, guid: aebbadc2c43663d4d9ee7d7c53b652a5, type: 3}
+      propertyPath: exitMiniMapSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 48e49f9f3055eb0458350b96ba79f23d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7128,7 +7145,7 @@ Transform:
   m_GameObject: {fileID: 892670327}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.18328826, w: 0.9830593}
-  m_LocalPosition: {x: -1.665, y: -0.12, z: 0}
+  m_LocalPosition: {x: -1.665, y: -0.12, z: -1}
   m_LocalScale: {x: 1.7748433, y: 2.2384324, z: 1.7748433}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7174,7 +7191,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 906310497
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4628d47c6238ed24a82a8d4819e03d8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7375,7 +7392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniMap: {fileID: 895410674}
-  exitMiniMapSound: {fileID: 0}
+  exitMiniMapSound: {fileID: 8300000, guid: 48e49f9f3055eb0458350b96ba79f23d, type: 3}
 --- !u!114 &924125814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8743,7 +8760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniMap: {fileID: 1240017330}
-  exitMiniMapSound: {fileID: 0}
+  exitMiniMapSound: {fileID: 8300000, guid: 48e49f9f3055eb0458350b96ba79f23d, type: 3}
 --- !u!1 &1055984957
 GameObject:
   m_ObjectHideFlags: 0
@@ -8991,7 +9008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniMap: {fileID: 1240017330}
-  enterMiniMapSound: {fileID: 0}
+  enterMiniMapSound: {fileID: 8300000, guid: f1dca1dbce7f5054e9dd7c25e39db917, type: 3}
 --- !u!1 &1075504978
 GameObject:
   m_ObjectHideFlags: 0
@@ -9100,11 +9117,11 @@ MonoBehaviour:
   armItem: {fileID: 11400000, guid: b57e359a0ac9e05429d16a9b946f09a4, type: 2}
   legObj: {fileID: 288562463}
   legItem: {fileID: 11400000, guid: b7bcdf924be56f942b2fc5f73611d500, type: 2}
-  putSound: {fileID: 0}
-  summonSound: {fileID: 0}
+  putSound: {fileID: 8300000, guid: f1dca1dbce7f5054e9dd7c25e39db917, type: 3}
+  summonSound: {fileID: 8300000, guid: 1e92999a2bfc1c34da6a48f250446b81, type: 3}
   awakenedHeadObj: {fileID: 1542885345}
   knifeItem: {fileID: 11400000, guid: 7442964a374fe9e4b9fd54ca2b0a693a, type: 2}
-  cutSound: {fileID: 0}
+  cutSound: {fileID: 8300000, guid: 602209da2c569574bbede97541fba2ad, type: 3}
   blood:
   - {fileID: 203122898}
   - {fileID: 2139598425}
@@ -9918,7 +9935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniMap: {fileID: 1961062552}
-  enterMiniMapSound: {fileID: 8300000, guid: 761211b02de16c7448fff7fbf9b7e758, type: 3}
+  enterMiniMapSound: {fileID: 8300000, guid: a4ec855e7ea23eb43858d091c2d6a82e, type: 3}
 --- !u!61 &1179813144
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10099,6 +10116,7 @@ MonoBehaviour:
   itemManager: {fileID: 1435142145}
   magicCirclePuzzleSolved: 0
   endGameUI: {fileID: 306513881}
+  buySound: {fileID: 8300000, guid: 5735e7a0b545d404db779961d84a5eb0, type: 3}
 --- !u!1 &1233906763
 GameObject:
   m_ObjectHideFlags: 0
@@ -10198,7 +10216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newPos: {fileID: 356414185}
-  moveSfx: {fileID: 0}
+  moveSfx: {fileID: 8300000, guid: 6f87f80e0d509a14080b878ad390fbd5, type: 3}
   afterMove:
     m_PersistentCalls:
       m_Calls:
@@ -10604,7 +10622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1276557117
 Transform:
   m_ObjectHideFlags: 0
@@ -10645,6 +10663,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 12786343}
     m_Modifications:
+    - target: {fileID: 4070647475014688627, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
+      propertyPath: triggerSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f1dca1dbce7f5054e9dd7c25e39db917, type: 3}
     - target: {fileID: 6238156774652088743, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
       propertyPath: m_Name
       value: candleBase (2)
@@ -10689,6 +10711,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7276336210337235490, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
+      propertyPath: triggerSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f1dca1dbce7f5054e9dd7c25e39db917, type: 3}
     - target: {fileID: 7276336210337235490, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -12738,6 +12764,10 @@ PrefabInstance:
       propertyPath: miniMap
       value: 
       objectReference: {fileID: 204911894}
+    - target: {fileID: 8431984503536433418, guid: aebbadc2c43663d4d9ee7d7c53b652a5, type: 3}
+      propertyPath: exitMiniMapSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 48e49f9f3055eb0458350b96ba79f23d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12925,6 +12955,10 @@ PrefabInstance:
       propertyPath: miniMap
       value: 
       objectReference: {fileID: 1961062552}
+    - target: {fileID: 8431984503536433418, guid: aebbadc2c43663d4d9ee7d7c53b652a5, type: 3}
+      propertyPath: exitMiniMapSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 48e49f9f3055eb0458350b96ba79f23d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13350,7 +13384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniMap: {fileID: 2050006009}
-  enterMiniMapSound: {fileID: 0}
+  enterMiniMapSound: {fileID: 8300000, guid: ce35ebb8ed4506e458c703e322947183, type: 3}
 --- !u!61 &1644601458
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14537,7 +14571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1767724707
 Transform:
   m_ObjectHideFlags: 0
@@ -15465,6 +15499,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 12786343}
     m_Modifications:
+    - target: {fileID: 4070647475014688627, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
+      propertyPath: triggerSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f1dca1dbce7f5054e9dd7c25e39db917, type: 3}
     - target: {fileID: 6238156774652088743, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
       propertyPath: m_Name
       value: candleBase (1)
@@ -15509,6 +15547,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7276336210337235490, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
+      propertyPath: triggerSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f1dca1dbce7f5054e9dd7c25e39db917, type: 3}
     - target: {fileID: 7276336210337235490, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -17341,7 +17383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cannotProgressPromptText: {fileID: 1754151130}
   changeMapSound: {fileID: 8300000, guid: 761211b02de16c7448fff7fbf9b7e758, type: 3}
-  cannotProgressSound: {fileID: 0}
+  cannotProgressSound: {fileID: 8300000, guid: b9b3827704c7d1541a97b4baf89ebe55, type: 3}
   map: {fileID: 1011760586}
   nextMap: {fileID: 1767724708}
 --- !u!1 &2125382920
@@ -18045,6 +18087,10 @@ PrefabInstance:
       propertyPath: miniMap
       value: 
       objectReference: {fileID: 747304545}
+    - target: {fileID: 8431984503536433418, guid: aebbadc2c43663d4d9ee7d7c53b652a5, type: 3}
+      propertyPath: exitMiniMapSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 48e49f9f3055eb0458350b96ba79f23d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18058,6 +18104,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 12786343}
     m_Modifications:
+    - target: {fileID: 4070647475014688627, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
+      propertyPath: triggerSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f1dca1dbce7f5054e9dd7c25e39db917, type: 3}
     - target: {fileID: 6238156774652088743, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
       propertyPath: m_Name
       value: candleBase
@@ -18102,6 +18152,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7276336210337235490, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
+      propertyPath: triggerSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f1dca1dbce7f5054e9dd7c25e39db917, type: 3}
     - target: {fileID: 7276336210337235490, guid: f3a3808710c3b9b42b28283388f3a1fc, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.size
       value: 2

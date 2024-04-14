@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     public bool magicCirclePuzzleSolved = false;
     [SerializeField] private GameObject endGameUI;
+    [Header("Shit since no enough time")]
+    [SerializeField] private AudioClip buySound;
 
     void Awake()
     {
@@ -39,5 +41,11 @@ public class GameManager : MonoBehaviour
     {
         InMiniMapMode = true;
         endGameUI.SetActive(true);
+    }
+
+    public void PlayBuySound()
+    {
+        if (buySound != null)
+            AudioSource.PlayClipAtPoint(buySound, Camera.main.transform.position);
     }
 }

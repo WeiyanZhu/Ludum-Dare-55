@@ -12,6 +12,7 @@ public class MagicCircleManager : MonoBehaviour
     [SerializeField] private GameObject magicCircleActivate;
     [SerializeField] private AudioClip runeActivateSound;
     [SerializeField] private AudioClip runeDeactivateSound;
+    [SerializeField] private AudioClip magicCircleActivateSound;
 
     public void LightCandle()
     {
@@ -56,6 +57,8 @@ public class MagicCircleManager : MonoBehaviour
             {
                 magicCircleActivate.SetActive(true);
                 GameManager.instance.magicCirclePuzzleSolved = true;
+                if (magicCircleActivateSound != null)
+                    AudioSource.PlayClipAtPoint(magicCircleActivateSound, Camera.main.transform.position);
             }
         }
         else

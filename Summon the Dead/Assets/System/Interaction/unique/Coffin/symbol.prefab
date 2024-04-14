@@ -106,7 +106,7 @@ MonoBehaviour:
   - {fileID: 2113661813, guid: 5b4ae3a7992dc1a4ba0278ec23d87755, type: 3}
   - {fileID: -1681367327, guid: 5b4ae3a7992dc1a4ba0278ec23d87755, type: 3}
   coffinPuzzleManager: {fileID: 0}
-  clickSound: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: f1dca1dbce7f5054e9dd7c25e39db917, type: 3}
 --- !u!61 &9101027361261697335
 BoxCollider2D:
   m_ObjectHideFlags: 0
